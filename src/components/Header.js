@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import AirbnbLogo from "./assets/AirbnbLogo.png";
+import AirbnbLogo from "../assets/AirbnbLogo.png";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
