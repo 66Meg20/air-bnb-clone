@@ -1,0 +1,30 @@
+.search__container {
+  position: absolute;
+  top: 35px;
+  left: 25%;
+  width: 100vw;
+}
+.MuiButton-root {
+  border-color: #ff5a60 !important;
+}
+.search__container > input {
+  width: 539px;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.search__container > button {
+  position: absolute;
+  left: 0;
+  text-transform: inherit !important;
+  background-color: #ff5a60;
+  color: white;
+  width: 579px;
+}
+.search__container > button:hover {
+  color: #ff5a60;
+  background-color: white;
+}

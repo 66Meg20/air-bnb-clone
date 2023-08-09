@@ -18,3 +18,22 @@
   margin-top: 20px;
   font-weight: 600px;
 }
+
+.banner__search {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__search__button {
+  background-color: #ffff !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: #ff5a60 !important;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ffff;
+  padding: 10px;
+}
