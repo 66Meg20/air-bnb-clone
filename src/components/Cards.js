@@ -1,7 +1,7 @@
 import React from "react";
-import "./cards.css";
+import "./Card.css";
 
-export default function Cards({ src, title, description, price }) {
+function Card({ src, title, description, price }) {
   return (
     <div className="cardContainer">
       <img src={src} alt="" />
@@ -14,3 +14,5 @@ export default function Cards({ src, title, description, price }) {
     </div>
   );
 }
+
+export default Card;

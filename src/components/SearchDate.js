@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import { Button } from "@mui/material";
+import "./Search.css";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
-import "react-date-range/dist/styles.css"; // main style file
-import "react-date-range/dist/theme/default.css"; // theme css file
-import "./searchDate.css";
-export default function SearchDate() {
+
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { Button } from "@mui/material";
+
+function Search() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const selectRange = {
@@ -22,10 +24,12 @@ export default function SearchDate() {
       <DateRangePicker ranges={[selectRange]} onChange={handleSelect} />
       <h2>
         Number of guests
-        <AccountCircleOutlinedIcon />
+        <AccountCircleIcon />
       </h2>
       <input min={0} defaultValue={2} type="number" />
       <Button> Search Airbnb</Button>
     </div>
   );
 }
+
+export default Search;

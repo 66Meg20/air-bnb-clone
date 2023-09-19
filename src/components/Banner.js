@@ -1,14 +1,17 @@
-import React, { useState } from "react";
-import "./banner.css";
+import react, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Banner.css";
 import { Button } from "@mui/material";
-import SearchDate from "./SearchDate.js";
+import React from "react";
+import Search from "./Search";
+// import { useHistory } from "react-router-dom";
 
-export default function Banner() {
+function Banner() {
   const [showSearch, setShowSearch] = useState(false);
   return (
     <div className="banner__container">
       <div className="banner__search">
-        {showSearch && <SearchDate />}
+        {showSearch && <Search />}
         <Button
           onClick={() => {
             setShowSearch(!showSearch);
@@ -29,3 +32,5 @@ export default function Banner() {
     </div>
   );
 }
+
+export default Banner;

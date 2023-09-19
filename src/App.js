@@ -1,15 +1,16 @@
+import react from "react";
 import "./App.css";
-import Header from "./components/Header.js";
-import Home from "./components/Home.js";
-import Footer from "./components/Footer.js";
+import Home from "./Home";
+import Header from "./Header";
+import Footer from "./Footer";
+import SearchPage from "./SearchPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-      {/* <Calendar/> */}
       <Home />
-      {/* <Cards/> */}
       <Footer />
     </div>
   );
