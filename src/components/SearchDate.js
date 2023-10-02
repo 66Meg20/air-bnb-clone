@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Search.css";
+import "./searchDate.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
@@ -7,7 +7,7 @@ import { DateRangePicker } from "react-date-range";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Button } from "@mui/material";
 
-function Search() {
+export default function Search() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const selectRange = {
@@ -31,5 +31,3 @@ function Search() {
     </div>
   );
 }
-
-export default Search;

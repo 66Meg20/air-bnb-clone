@@ -1,7 +1,7 @@
 import React from "react";
-import "./Footer.css";
+import "./footer.css";
 
-function Footer() {
+export default function Footer() {
   return (
     <div className="footer__container">
       <p>2022 Airbnb clone! No rites reserved - this is demo!</p>
@@ -9,5 +9,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

@@ -1,12 +1,9 @@
 import react, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./Banner.css";
+import "./banner.css";
 import { Button } from "@mui/material";
-import React from "react";
-import Search from "./Search";
-// import { useHistory } from "react-router-dom";
+import Search from "./SearchDate";
 
-function Banner() {
+export default function Banner() {
   const [showSearch, setShowSearch] = useState(false);
   return (
     <div className="banner__container">
@@ -32,5 +29,3 @@ function Banner() {
     </div>
   );
 }
-
-export default Banner;

@@ -1,9 +1,9 @@
 import React from "react";
 import "./home.css";
 import Banner from "./Banner";
-import Card from "./Card";
+import Card from "./Cards";
 
-function Home() {
+export default function Home() {
   return (
     <div className="home__container">
       <Banner />
@@ -58,5 +58,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

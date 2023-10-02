@@ -1,13 +1,11 @@
 import React from "react";
 import "./Header.css";
-// import AirbnbLogo from "./assets/AirbnbLogo.png";
 import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-// import { Link } from "react-router-dom";
 
-function Header() {
+export default function Header() {
   return (
     <div className="header__container">
       <img
@@ -27,5 +25,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;
